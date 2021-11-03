@@ -28,6 +28,11 @@ const Navbar = ({ click }) => {
         <li>
           <Link to="/">Shop</Link>
         </li>
+        <li>
+            <Link to="" className="account__link">
+                Sign In
+            </Link>
+        </li>
       </ul>
 
       <div className="hamburger__menu" onClick={click}>
