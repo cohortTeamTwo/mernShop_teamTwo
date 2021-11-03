@@ -23,6 +23,11 @@ const Navbar = ({click}) => {
                         Shop
                     </Link>
                 </li>
+                <li>
+                    <Link to="/" className="account__link">
+                        Sign in
+                    </Link>
+                </li>
 
             </ul>
 
