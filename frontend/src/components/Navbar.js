@@ -29,7 +29,7 @@ const Navbar = ({ click }) => {
           </Link>
         </li>
         <li>
-            <Link to="" className="account__link">
+            <Link className="account__link" trigger="click" /*overlay={popover}*/>
                 Sign In
             </Link>
         </li>
