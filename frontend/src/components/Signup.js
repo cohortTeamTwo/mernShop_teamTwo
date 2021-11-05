@@ -1,7 +1,8 @@
 import { Button, Col, Container, Form, Popover, Row } from 'react-bootstrap';
 import './Signup.css';
+import Country from './Country';
 
-const Signup = () => {
+function Signup() {
   return (
     <div>
       <Popover id="popover-basic">
@@ -45,7 +46,9 @@ const Signup = () => {
                   <Form.Label>Country</Form.Label>
                   <Form.Select defaultValue="Choose...">
                     <option>Choose...</option>
-                    <option>...</option>
+                    <option>
+                      <Country />
+                    </option>
                   </Form.Select>
                 </Form.Group>
 
@@ -68,8 +71,6 @@ const Signup = () => {
       </Popover>
     </div>
   );
-
-  // Trigger code must go HERE
-};
+}
 
 export default Signup;

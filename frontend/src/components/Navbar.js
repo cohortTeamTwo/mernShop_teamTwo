@@ -1,6 +1,7 @@
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import Login from '../components/Login';
 
 const Navbar = ({ click }) => {
   const cart = useSelector(state => state.cart);
@@ -29,8 +30,13 @@ const Navbar = ({ click }) => {
           <Link to="/">Shop</Link>
         </li>
         <li>
-          <Link to="" className="account__link">
-            signin
+          <Link to="/signup" className="account__link">
+            Sign Up
+          </Link>
+        </li>
+        <li>
+          <Link to="/login" className="account__link">
+            Sign In
           </Link>
         </li>
       </ul>
