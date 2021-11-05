@@ -1,9 +1,9 @@
-import "./Navbar.css";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import './Navbar.css';
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Navbar = ({ click }) => {
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector(state => state.cart);
   const { cartItems } = cart;
 
   const getCartCount = () => {
@@ -29,9 +29,9 @@ const Navbar = ({ click }) => {
           <Link to="/">Shop</Link>
         </li>
         <li>
-            <Link to="" className="account__link">
-                Sign In
-            </Link>
+          <Link to="" className="account__link">
+            signin
+          </Link>
         </li>
       </ul>
 
