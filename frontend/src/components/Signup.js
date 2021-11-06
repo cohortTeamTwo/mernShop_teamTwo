@@ -10,14 +10,17 @@ function Signup() {
         <Popover.Body>
           <Container className="formCont">
             <Form>
-              <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>Full Name</Form.Label>
-                <Form.Control
-                  type="textl"
-                  placeholder="Enter your full name"
-                  required
-                />
-              </Form.Group>
+              <Row className="mb-3">
+                <Form.Group as={Col} controlId="formGridFirstNamel">
+                  <Form.Label>First Name</Form.Label>
+                  <Form.Control type="text" placeholder="First Namel" />
+                </Form.Group>
+
+                <Form.Group as={Col} controlId="formGridLastName">
+                  <Form.Label>Last Name</Form.Label>
+                  <Form.Control type="text" placeholder="Last Name" />
+                </Form.Group>
+              </Row>
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridEmail">
                   <Form.Label>Email</Form.Label>
@@ -40,21 +43,21 @@ function Signup() {
 
               <Form.Group className="mb-3" controlId="formGridAddress1">
                 <Form.Label>Address</Form.Label>
-                <Form.Control placeholder="1234 Main St" required />
+                <Form.Control placeholder="1234 Main St"  />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formGridTelephone">
                 <Form.Label>Telephone Number</Form.Label>
-                <Form.Control placeholder="Telephone Number" required />
+                <Form.Control placeholder="Telephone Number"  />
               </Form.Group>
 
               <Row className="mb-3">
-                <Form.Group as={Col} controlId="formGridCity" required>
+                <Form.Group as={Col} controlId="formGridCity" >
                   <Form.Label>City</Form.Label>
                   <Form.Control />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridCountry" required>
+                <Form.Group as={Col} controlId="formGridCountry" >
                   <Form.Label>Country</Form.Label>
                   <Form.Select defaultValue="Choose...">
                     {Country.map(option => (
@@ -62,9 +65,9 @@ function Signup() {
                         {option}
                       </option>
                     ))}
-                  </Form.Select> 
+                  </Form.Select>
                 </Form.Group>
-                <Form.Group as={Col} controlId="formGridZip" required>
+                <Form.Group as={Col} controlId="formGridZip" >
                   <Form.Label>Zip</Form.Label>
                   <Form.Control />
                 </Form.Group>
@@ -75,6 +78,12 @@ function Signup() {
                   type="checkbox"
                   label="By checking this box you have agreed to all our Terms And Conditions"
                   required
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" id="formGridCheckbox">
+                <Form.Check
+                  type="checkbox"
+                  label="By checking this box you have agreed to send you emails with latest additions to our products"
                 />
               </Form.Group>
 
