@@ -13,15 +13,21 @@ const userSchema = new mongoose.Schema({
     type:String,
     required:true,
   },
+  dateCreated:String,
   street: String,
   city: String,
   country: String,
   phone: String,
   avatarUrl: String,
+  marketingOptIn: Boolean,
 })
 
 userSchema.pre('save', function (next) {
   const user = this
+
+  if (this.isNew) {
+    this.dateCreated = new Date().toUTCString()
+  }
 
   if (this.isModified("password") || this.isNew) {
     bcrypt.genSalt(10, function (saltError, salt) {
