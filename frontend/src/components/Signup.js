@@ -57,13 +57,13 @@ function Signup() {
                 <Form.Group as={Col} controlId="formGridCountry" required>
                   <Form.Label>Country</Form.Label>
                   <Form.Select defaultValue="Choose...">
-                    <option>Choose...</option>
-                    <option>
-                      <Country />
-                    </option>
-                  </Form.Select>
+                    {Country.map(option => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </Form.Select> 
                 </Form.Group>
-
                 <Form.Group as={Col} controlId="formGridZip" required>
                   <Form.Label>Zip</Form.Label>
                   <Form.Control />

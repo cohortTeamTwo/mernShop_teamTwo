@@ -1,7 +1,6 @@
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import Login from '../components/Login';
 
 const Navbar = ({ click }) => {
   const cart = useSelector(state => state.cart);
