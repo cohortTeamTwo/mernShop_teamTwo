@@ -1,4 +1,4 @@
-import { Button, Col, Container, Form, Popover, Row } from 'react-bootstrap';
+import { Button, Container, Form, Popover } from 'react-bootstrap';
 import './Login.css';
 
 const Login = () => {
