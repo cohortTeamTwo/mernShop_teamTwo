@@ -1,4 +1,8 @@
-import { Button, Col, Container, Form } from 'react-bootstrap';
+<<<<<<< HEAD
+import { Button, Container, Form } from 'react-bootstrap';
+=======
+import { Button, Container, Form } from 'react-bootstrap';
+>>>>>>> 06eea135b060bddd093ff4a79ba3186050ffb96c
 import './Login.css';
 
 const Login = () => {
