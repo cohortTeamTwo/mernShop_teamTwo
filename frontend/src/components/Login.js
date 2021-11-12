@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 import { Button, Container, Form } from 'react-bootstrap';
-=======
-import { Button, Container, Form } from 'react-bootstrap';
->>>>>>> 06eea135b060bddd093ff4a79ba3186050ffb96c
 import './Login.css';
 
 const Login = () => {
 	return (
-		<div className='form'>
+		<div className="form">
 			<Container className="formCont">
 				<Form>
 					<Form.Group className="mb-3" controlId="formBasicEmail">
